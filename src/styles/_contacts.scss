@@ -1,0 +1,39 @@
+/* contacts section */
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 50vh;
+  background: url("/img/pizza_contacts.jpg") no-repeat center center/cover;
+}
+
+.contacts .box-container {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 2.5rem;
+}
+
+.contacts .box-container .box {
+  flex: 1 1 20rem;
+  background: #fff;
+  margin: 1rem;
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contacts .box-container .box h3 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.contacts .box-container .box p {
+  font-size: 1.6rem;
+}

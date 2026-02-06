@@ -1,0 +1,42 @@
+/* meal section  */
+
+.meal {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.meal .snacks {
+  flex: 50rem;
+  padding: 4rem 2rem;
+}
+
+.meal .drinks {
+  flex: 50rem;
+  padding: 4rem 2rem;
+}
+
+.meal h3 {
+  font-size: 5rem;
+  color: orangered;
+  margin: 0rem 0rem 2rem;
+}
+
+.meal h4 {
+  font-size: 2.5rem;
+  margin: 1rem 0rem;
+}
+
+.meal p {
+  font-size: 1.7rem;
+}
+
+.meal .price {
+  font-size: 2.5rem;
+  color: orangered;
+  margin: 1rem 0rem;
+}

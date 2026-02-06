@@ -13,14 +13,50 @@ html {
   overflow-x: hidden;
 }
 
-/* menu section */
+/* contacts section */
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 50vh;
+  background: url("/img/pizza_contacts.jpg") no-repeat center center/cover;
+}
 
+.contacts .box-container {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 2.5rem;
+}
+
+.contacts .box-container .box {
+  flex: 1 1 20rem;
+  background: #fff;
+  margin: 1rem;
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contacts .box-container .box h3 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.contacts .box-container .box p {
+  font-size: 1.6rem;
+}
+
+/* menu section */
 .menu {
   width: 100%;
   min-height: 100vh;
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(img/bg.jpg) no-repeat center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/img/bg.jpg") no-repeat center center/cover;
   padding: 2rem 5%;
 }
 
@@ -43,6 +79,25 @@ html {
   animation: rotate 10s infinite linear;
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 768px) {
+  .menu .navbar .logo img {
+    width: 10rem;
+  }
+  .menu .navbar ul li {
+    margin: 0.5rem;
+  }
+  .menu .navbar ul li a {
+    font-size: 1.8rem;
+  }
+}
 .menu .navbar ul {
   display: flex;
   justify-content: center;
@@ -52,11 +107,21 @@ html {
 .menu .navbar ul li {
   margin: 0rem 2rem;
 }
+@media (max-width: 480px) {
+  .menu .navbar ul li {
+    margin: 0rem 1rem;
+  }
+}
 
 .menu .navbar ul li a {
   font-size: 2.5rem;
   color: orangered;
   transition: 0.3s;
+}
+@media (max-width: 480px) {
+  .menu .navbar ul li a {
+    font-size: 1.8rem;
+  }
 }
 
 .menu .navbar.active {
@@ -64,20 +129,16 @@ html {
   box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.25);
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 .menu .heading {
   font-size: 8rem;
   color: #fff;
   text-align: center;
   padding: 10rem 0rem 5rem;
+}
+@media (max-width: 480px) {
+  .menu .heading {
+    font-size: 5rem;
+  }
 }
 
 .menu .box-container .box img {
@@ -130,7 +191,6 @@ html {
 }
 
 /* meal section  */
-
 .meal {
   color: #fff;
   display: flex;
@@ -173,7 +233,6 @@ html {
 }
 
 /* testimonials section */
-
 .testimonials {
   display: flex;
   justify-content: center;
@@ -219,74 +278,18 @@ html {
   margin-bottom: 1rem;
 }
 
-/* contacts section */
-
-.contacts {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  min-height: 50vh;
-  background: url(img/pizza_contacts.jpg) no-repeat center/cover;
-}
-
-.contacts .box-container {
-  width: 60%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 2rem 2.5rem;
-}
-
-.contacts .box-container .box {
-  flex: 1 1 20rem;
-  background: #fff;
-  margin: 1rem;
-  padding: 2rem 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.contacts .box-container .box h3 {
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-}
-
-.contacts .box-container .box p {
-  font-size: 1.6rem;
-}
-
-/* media queries */
-
-@media (max-width: 768px) {
-  .menu .navbar .logo img {
-    width: 10rem;
-  }
-
-  .menu .navbar ul li {
-    margin: 0.5rem;
-  }
-
-  .menu .navbar ul li a {
-    font-size: 1.8rem;
-  }
-}
-
 @media (max-width: 678px) {
   .testimonials .left-side .img img {
     width: 100%;
   }
 }
-
 @media (max-width: 500px) {
   html {
     font-size: 50%;
   }
-
   .testimonials .left-side .img img {
     width: 100%;
   }
 }
+
+/*# sourceMappingURL=main.css.map */
