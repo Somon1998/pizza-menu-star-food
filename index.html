@@ -20,6 +20,13 @@
     ></script>
   </head>
   <body>
+    <!-- Снег отображается зимой автоматически -->
+    <div class="snow-container"></div>
+    <!-- Ёлка (отображается зимой автоматически) -->
+    <div id="tree" class="tree hidden">
+      <div class="lights"></div>
+    </div>
+
     <!-- menu section start -->
 
     <section class="menu" id="menu">
@@ -47,7 +54,7 @@
             Нежная сырная пицца с расплавленной моцареллой, насыщенным томатным
             соусом и золотистой корочкой
           </p>
-          <p class="price">$13.25</p>
+          <p class="price">TJS 75</p>
         </div>
         <div class="box">
           <img src="img/pizza_menu.png" alt="pizza" />
@@ -56,7 +63,7 @@
             Пикантная пицца с ломтиками пепперони, томатным соусом и сыром
             моцарелла на хрустящей корочке
           </p>
-          <p class="price">$13.25</p>
+          <p class="price">TJS 85</p>
         </div>
         <div class="box">
           <img src="img/pizza_menu.png" alt="pizza" />
@@ -65,7 +72,7 @@
             Классическая пицца Маргарита с томатным соусом, свежими помидорами,
             базиликом и моцареллой на тонкой корочке
           </p>
-          <p class="price">$13.25</p>
+          <p class="price">TJS 70</p>
         </div>
         <div class="box">
           <img src="img/pizza_menu.png" alt="pizza" />
@@ -74,7 +81,7 @@
             Вкусная вегетарианская пицца с разнообразными свежими овощами,
             томатным соусом и сыром моцарелла на тонкой корочке
           </p>
-          <p class="price">$13.25</p>
+          <p class="price">TJS 80</p>
         </div>
         <div class="box">
           <img src="img/pizza_menu.png" alt="pizza" />
@@ -83,7 +90,7 @@
             Пикантная пицца с курицей на гриле, болгарским перцем, луком и сыром
             моцарелла на хрустящей корочке
           </p>
-          <p class="price">$13.25</p>
+          <p class="price">TJS 90</p>
         </div>
         <div class="box">
           <img src="img/pizza_menu.png" alt="pizza" />
@@ -92,7 +99,7 @@
             Пикантная пицца с курицей на гриле, болгарским перцем, луком и сыром
             моцарелла на хрустящей корочке
           </p>
-          <p class="price">$13.25</p>
+          <p class="price">TJS 88</p>
         </div>
         <div class="box">
           <img src="img/pizza_menu.png" alt="pizza" />
@@ -101,7 +108,7 @@
             Вкусная пицца с грибами, томатным соусом и сыром моцарелла на тонкой
             корочке
           </p>
-          <p class="price">$13.25</p>
+          <p class="price">TJS 75</p>
         </div>
         <div class="box">
           <img src="img/pizza_menu.png" alt="pizza" />
@@ -110,7 +117,7 @@
             Пикантная пицца с острым соусом чили, ломтиками перца халапеньо и
             сыром моцарелла на хрустящей корочке
           </p>
-          <p class="price">$13.25</p>
+          <p class="price">TJS 77</p>
         </div>
         <div class="box">
           <img src="img/pizza_menu.png" alt="pizza" />
@@ -119,7 +126,7 @@
             Сладкая и соленая пицца с ветчиной, ананасами, томатным соусом и
             сыром моцарелла на тонкой корочке
           </p>
-          <p class="price">$13.25</p>
+          <p class="price">TJS 50</p>
         </div>
       </div>
       <div class="meal" id="meal">
@@ -265,5 +272,7 @@
         }
       });
     </script>
+
+    <script type="module" src="/dist/js/main.js"></script>
   </body>
 </html>
