@@ -21,7 +21,7 @@ html {
   align-items: center;
   flex-wrap: wrap;
   min-height: 50vh;
-  background: url("/img/pizza_contacts.jpg") no-repeat center center/cover;
+  background: url("../../img/pizza_contacts.jpg") center/cover no-repeat;
 }
 
 .contacts .box-container {
@@ -57,7 +57,7 @@ html {
 .menu {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.8)), url("/img/bg.jpg") no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../img/bg.jpg") center/cover no-repeat;
   padding: 2rem 5%;
 }
 
