@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Itim", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+/* menu section */
+
+.menu {
+  width: 100%;
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(img/bg.jpg) no-repeat center/cover;
+  padding: 2rem 5%;
+}
+
+.menu .navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  padding-top: 1rem;
+  z-index: 1000;
+  height: auto;
+  background-color: transparent;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu .navbar .logo img {
+  width: 15rem;
+  animation: rotate 10s infinite linear;
+}
+
+.menu .navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu .navbar ul li {
+  margin: 0rem 2rem;
+}
+
+.menu .navbar ul li a {
+  font-size: 2.5rem;
+  color: orangered;
+  transition: 0.3s;
+}
+
+.menu .navbar.active {
+  background: #222;
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.25);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.menu .heading {
+  font-size: 8rem;
+  color: #fff;
+  text-align: center;
+  padding: 10rem 0rem 5rem;
+}
+
+.menu .box-container .box img {
+  width: 30rem;
+  transition: 0.3s;
+}
+
+.menu .box-container .box img:hover {
+  transform: scale(1.15);
+  overflow: hidden;
+}
+
+.menu .box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: 0 auto;
+  padding: 1rem 5%;
+}
+
+.menu .box-container .box {
+  flex: 1 1 20rem;
+  background: #fff;
+  margin: 1rem;
+  text-align: center;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.menu .box-container .box h3 {
+  font-size: 2.5rem;
+  padding: 1rem 0rem;
+}
+
+.menu .box-container .box p {
+  font-size: 1.5rem;
+  text-align: justify;
+  padding: 0rem 2.5rem;
+  font-weight: normal;
+}
+
+.menu .box-container .box .price {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 2rem;
+  font-weight: 800;
+  color: orangered;
+}
+
+/* meal section  */
+
+.meal {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.meal .snacks {
+  flex: 50rem;
+  padding: 4rem 2rem;
+}
+
+.meal .drinks {
+  flex: 50rem;
+  padding: 4rem 2rem;
+}
+
+.meal h3 {
+  font-size: 5rem;
+  color: orangered;
+  margin: 0rem 0rem 2rem;
+}
+
+.meal h4 {
+  font-size: 2.5rem;
+  margin: 1rem 0rem;
+}
+
+.meal p {
+  font-size: 1.7rem;
+}
+
+.meal .price {
+  font-size: 2.5rem;
+  color: orangered;
+  margin: 1rem 0rem;
+}
+
+/* testimonials section */
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.testimonials .left-side .img img {
+  width: 50rem;
+  height: 60rem;
+  border-radius: 2rem;
+}
+
+.testimonials .left-side {
+  flex: 1 1 40rem;
+}
+
+.testimonials .left-side h2 {
+  font-size: 3rem;
+  padding: 1rem 0rem 3rem;
+}
+
+.testimonials .right-side {
+  flex: 1 1 40rem;
+}
+
+.testimonials .right-side .box {
+  margin: 1rem;
+  padding: 2rem 2.5rem;
+}
+
+.testimonials .right-side .box i {
+  font-size: 4rem;
+  color: orangered;
+  margin-bottom: 1rem;
+}
+
+.testimonials .right-side .box p {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* contacts section */
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 50vh;
+  background: url(img/pizza_contacts.jpg) no-repeat center/cover;
+}
+
+.contacts .box-container {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 2.5rem;
+}
+
+.contacts .box-container .box {
+  flex: 1 1 20rem;
+  background: #fff;
+  margin: 1rem;
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contacts .box-container .box h3 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.contacts .box-container .box p {
+  font-size: 1.6rem;
+}
+
+/* media queries */
+
+@media (max-width: 768px) {
+  .menu .navbar .logo img {
+    width: 10rem;
+  }
+
+  .menu .navbar ul li {
+    margin: 0.5rem;
+  }
+
+  .menu .navbar ul li a {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 678px) {
+  .testimonials .left-side .img img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+
+  .testimonials .left-side .img img {
+    width: 100%;
+  }
+}
